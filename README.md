@@ -7,7 +7,7 @@
 [![Latest Version on Packagist](https://img.shields.io/packagist/v/sharpapi/laravel-custom-workflow.svg?style=flat-square)](https://packagist.org/packages/sharpapi/laravel-custom-workflow)
 [![Total Downloads](https://img.shields.io/packagist/dt/sharpapi/laravel-custom-workflow.svg?style=flat-square)](https://packagist.org/packages/sharpapi/laravel-custom-workflow)
 
-Check the full documentation on the [Custom AI Workflows](https://sharpapi.com/en/catalog/ai/custom-workflows) page.
+Check the full documentation on the [Custom AI Workflows](https://sharpapi.com/custom-workflows) page.
 
 ---
 
@@ -15,8 +15,7 @@ Check the full documentation on the [Custom AI Workflows](https://sharpapi.com/e
 
 | Resource | Link |
 |----------|------|
-| **Main API Documentation** | [Authorization, Webhooks, Polling & More](https://documenter.getpostman.com/view/31106842/2s9Ye8faUp) |
-| **Product Details** | [SharpAPI.com](https://sharpapi.com/en/catalog/ai/custom-workflows) |
+| **Product Details** | [SharpAPI.com](https://sharpapi.com/custom-workflows) |
 | **PHP SDK (non-Laravel)** | [sharpapi/php-custom-workflow](https://github.com/sharpapi/php-custom-workflow) |
 | **SDK Libraries** | [GitHub - SharpAPI SDKs](https://github.com/sharpapi) |
 
