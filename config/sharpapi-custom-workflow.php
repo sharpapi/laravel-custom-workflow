@@ -12,7 +12,7 @@ return [
     |
     */
 
-    'api_key' => env('SHARPAPI_API_KEY'),
+    'api_key' => env('SHARP_API_KEY', env('SHARPAPI_API_KEY')),
 
     /*
     |--------------------------------------------------------------------------

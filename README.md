@@ -42,7 +42,7 @@ composer require sharpapi/laravel-custom-workflow
 ### Step 3. Add your API key to `.env`:
 
 ```env
-SHARPAPI_API_KEY=your-api-key
+SHARP_API_KEY=your-api-key
 ```
 
 ### Step 4 (Optional). Publish the configuration:
@@ -114,7 +114,7 @@ After publishing, the config file is at `config/sharpapi-custom-workflow.php`:
 
 ```php
 return [
-    'api_key' => env('SHARPAPI_API_KEY'),
+    'api_key' => env('SHARP_API_KEY', env('SHARPAPI_API_KEY')),
     'base_url' => env('SHARPAPI_BASE_URL', 'https://sharpapi.com/api/v1'),
 ];
 ```
