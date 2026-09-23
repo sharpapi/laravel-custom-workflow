@@ -7,6 +7,7 @@ All notable changes to `sharpapi/laravel-custom-workflow` will be documented in 
 - The base URL now reads `SHARP_API_BASE_URL`, the env name used by every other SharpAPI package. The old `SHARPAPI_BASE_URL` still works as a fallback.
 - Fixed the facade docblock: `fetchResults()` returns `SharpAPI\Core\DTO\SharpApiJob` (the namespace was misspelled `Dto`).
 - Added a Pest + Orchestra Testbench test suite.
+- Ships Laravel Boost resources: a core guideline (`resources/boost/guidelines/core.blade.php`) and the `sharpapi-custom-workflow` skill.
 
 ## 1.0.0 - 2026-02-20
 

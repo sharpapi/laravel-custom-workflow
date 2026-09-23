@@ -128,6 +128,20 @@ A missing API key throws `SharpAPI\LaravelCustomWorkflow\Exceptions\ApiKeyIsMiss
 
 ---
 
+## AI agents (Laravel Boost)
+
+This package ships [Laravel Boost](https://github.com/laravel/boost) resources: a short guideline that is always loaded, and an on-demand `sharpapi-custom-workflow` skill covering the facade, file uploads, queued polling, error handling and testing. Boost 2 or newer is required.
+
+```bash
+composer require laravel/boost --dev
+php artisan boost:install          # first time
+php artisan boost:update --discover   # already using Boost
+```
+
+Select `sharpapi/laravel-custom-workflow` when Boost asks which packages to include.
+
+---
+
 ### Do you think our API is missing some obvious functionality?
 
 - [Please let us know via GitHub »](https://github.com/sharpapi/laravel-custom-workflow/issues)
