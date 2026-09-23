@@ -24,7 +24,7 @@ Check the full documentation on the [Custom AI Workflows](https://sharpapi.com/c
 ## Requirements
 
 - PHP >= 8.1
-- Laravel 10, 11, or 12
+- Laravel 10, 11, 12, or 13
 - A SharpAPI account with an API key
 
 ---
@@ -115,9 +115,16 @@ After publishing, the config file is at `config/sharpapi-custom-workflow.php`:
 ```php
 return [
     'api_key' => env('SHARP_API_KEY', env('SHARPAPI_API_KEY')),
-    'base_url' => env('SHARPAPI_BASE_URL', 'https://sharpapi.com/api/v1'),
+    'base_url' => env('SHARP_API_BASE_URL', env('SHARPAPI_BASE_URL', 'https://sharpapi.com/api/v1')),
 ];
 ```
+
+| Env variable | Purpose |
+|--------------|---------|
+| `SHARP_API_KEY` | Your API key. `SHARPAPI_API_KEY` is read as a fallback. |
+| `SHARP_API_BASE_URL` | Optional API base URL override, the same name every other SharpAPI package uses. `SHARPAPI_BASE_URL` is read as a fallback for older installs. |
+
+A missing API key throws `SharpAPI\LaravelCustomWorkflow\Exceptions\ApiKeyIsMissing` the first time the client is resolved, not at boot.
 
 ---
 
